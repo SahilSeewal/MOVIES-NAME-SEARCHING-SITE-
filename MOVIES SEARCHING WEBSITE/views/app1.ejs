@@ -1,0 +1,14 @@
+<div class="container" align="center">
+
+<%if(data){%>
+    <h1>RELATED MOVIE SEARCHES</h1>
+<% data.forEach(function(x){ %>
+    <ul style="list-style:none;">
+    <li><%= x["Title"] %> - <%= x["Year"] %></li> 
+    </ul>
+<% }) %>
+<% } else{ %>
+<h1 style="font-size:100px;text-align: center;">OOPS MOVIE NOT FOUND :(</h1>
+<% } %>
+</div>
+<a href="/">search again</a>
